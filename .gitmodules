@@ -7,7 +7,6 @@
 	path = shared/lib/netxduo
 	url = https://github.com/azure-rtos/netxduo
 	shallow = true
-
 [submodule "shared/lib/jsmn/src"]
 	path = shared/lib/jsmn/src
 	url = https://github.com/zserge/jsmn

@@ -1,0 +1,12 @@
+build/
+Debug/
+Release/
+VisualGDB/
+settings/
+
+mcu.mak
+.cortex-debug*
+.vs/**
+!.vs/launch.vs.json
+!.vs/ProjectSettings.json
+app/azure_config.h

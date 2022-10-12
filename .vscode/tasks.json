@@ -1,0 +1,75 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Flash",
+            "type": "shell",
+            "command": "openocd -f stm32l4discovery.cfg -c \"program build/app/stm32l4s5_azure_iot.elf verify\" -c \"reset halt\" -c shutdown",
+            "options": {
+                "cwd": "${workspaceRoot}"
+            },
+            "problemMatcher": [],
+            //"dependsOn": [ "Build" ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Generate the build system",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "-Bbuild",
+                "-GNinja",
+                "-DCMAKE_TOOLCHAIN_FILE=cmake/arm-gcc-cortex-m4.cmake"
+            ],
+            "problemMatcher": "$gcc",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "${workspaceRoot}"
+            }
+        },
+        {
+            "label": "Build",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "build"
+            ],
+            "problemMatcher": "$gcc",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "${workspaceRoot}"
+            }
+        },
+        {
+            // Requires: npm install -g @serialport/terminal
+            "label": "Serial terminal",
+            "type": "shell",
+            "command": "serialport-terminal",
+            "args": [
+                "-b",
+                "115200"
+            ],
+            "options": {
+                "cwd": "${workspaceRoot}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "presentation": {
+                "clear": true
+            },
+        }
+    ]
+}
