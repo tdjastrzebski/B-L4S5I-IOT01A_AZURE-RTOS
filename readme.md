@@ -1,5 +1,6 @@
 
 # Microsoft Azure IoT demo with STMicroelectronics B-L4S5I-IOTOA1 board and e-Ink display
+![](image.jpg)
 > This demo has been derived from Microsoft example available [here](https://github.com/azure-rtos/getting-started/tree/master/STMicroelectronics/B-L4S5I-IOT01A) and extended to support e-Ink display.  
 > Please refer to the original source code location for prerequisites, environment setup, build and deployment instructions.
 
@@ -12,6 +13,16 @@ To clone this repo execute:
 * [ST B-L4S5I-IOT01A board](https://www.st.com/en/evaluation-tools/b-l4s5i-iot01a.html)
 * [2.66" Waveshare e-Ink Display](https://www.waveshare.com/wiki/Pico-ePaper-2.66) (optional)
 
+## Visual Studio 2022 complete environment setup
+From **PowerShell** run:  
+* `git clone --recursive https://github.com/tdjastrzebski/B-L4S5I-IOT01A_AZURE-RTOS`
+* `cd .\B-L4S5I-IOT01A_AZURE-RTOS`
+* `iex (iwr -useb https://aka.ms/vcpkg-init.ps1)`  
+* `vcpkg activate`
+* `Start-Process devenv .`  
+
+More info: [Embedded Software Development in Visual Studio](https://devblogs.microsoft.com/cppblog/visual-studio-embedded-development) by Marc Goodner
+> Note: Visual Studio **Preview** version is no longer required.
 # References
 ### 2.66" Waveshare eInk Display
 * [Waveshare user guide](https://www.waveshare.com/wiki/2.66inch_e-Paper_Module_Manual#User_Guides_of_STM32)
@@ -33,7 +44,7 @@ To clone this repo execute:
 * https://www.freetype.org/ + https://gitlab.freedesktop.org/freetype
 * http://www.angelcode.com/products/bmfont
 * https://sourceforge.net/projects/terminus-font (Terminus font)
-
-![](image.jpg)
+## e-Ink wiring diagram
+> Note: e-ink display is optional
 
 ![display wiring diagram](eInkWiringDiagram.png)
