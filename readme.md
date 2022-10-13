@@ -45,6 +45,6 @@ More info: [Embedded Software Development in Visual Studio](https://devblogs.mic
 * http://www.angelcode.com/products/bmfont
 * https://sourceforge.net/projects/terminus-font (Terminus font)
 ## e-Ink wiring diagram
-> Note: e-ink display is optional
+> Note: e-Ink display is optional
 
 ![display wiring diagram](eInkWiringDiagram.png)
