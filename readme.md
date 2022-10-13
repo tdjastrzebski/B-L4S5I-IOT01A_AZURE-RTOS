@@ -1,6 +1,6 @@
 
 # Microsoft Azure IoT demo with STMicroelectronics B-L4S5I-IOTOA1 board and e-Ink display
-> This example is based entirely on Microsoft sample available [here](https://github.com/azure-rtos/getting-started/tree/master/STMicroelectronics/B-L4S5I-IOT01A) and extended to support e-Ink display.  
+> This demo has been derived from Microsoft example available [here](https://github.com/azure-rtos/getting-started/tree/master/STMicroelectronics/B-L4S5I-IOT01A) and extended to support e-Ink display.  
 > Please refer to the original source code location for prerequisites, environment setup, build and deployment instructions.
 
 To clone this repo execute:  
@@ -35,3 +35,5 @@ To clone this repo execute:
 * https://sourceforge.net/projects/terminus-font (Terminus font)
 
 ![](image.jpg)
+
+![display wiring diagram](eInkWiringDiagram.png)
