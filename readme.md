@@ -1,7 +1,7 @@
 
 # Microsoft Azure IoT demo with STMicroelectronics B-L4S5I-IOTOA1 board and e-Ink display
 ![](image.jpg)
-> This demo has been derived from Microsoft example available [here](https://github.com/azure-rtos/getting-started/tree/master/STMicroelectronics/B-L4S5I-IOT01A) and extended to support e-Ink display.  
+> This demo has been derived from Microsoft **Azure RTOS** example available [here](https://github.com/azure-rtos/getting-started/tree/master/STMicroelectronics/B-L4S5I-IOT01A) and extended to support e-Ink display.  
 > Please refer to the original source code location for prerequisites, environment setup, build and deployment instructions.
 
 To clone this repo execute:  
@@ -9,7 +9,7 @@ To clone this repo execute:
 
 ## What you need
 
-* Visual Studio or VS Code
+* Visual Studio or VS Code with C/C++ tools
 * [ST B-L4S5I-IOT01A board](https://www.st.com/en/evaluation-tools/b-l4s5i-iot01a.html)
 * [2.66" Waveshare e-Ink Display](https://www.waveshare.com/wiki/Pico-ePaper-2.66) (optional)
 
