@@ -4,9 +4,9 @@
 > This demo has been derived from Microsoft **Azure RTOS** example available [here](https://github.com/azure-rtos/getting-started/tree/master/STMicroelectronics/B-L4S5I-IOT01A) and extended to support e-Ink display.  
 > Please refer to the original source code location for prerequisites, environment setup, build and deployment instructions.
 
-To clone this repo execute:  
-`git clone --recursive https://github.com/tdjastrzebski/B-L4S5I-IOT01A_AZURE-RTOS`
-
+1. To clone this repo execute:  
+`git clone --recursive https://github.com/tdjastrzebski/B-L4S5I-IOT01A_AZURE-RTOS`  
+1. Copy `/app/azure_config-template.h` to `/app/azure_config.h`, modify settings like WiFi password, IoT hostname etc.
 ## What you need
 
 * Visual Studio or VS Code with C/C++ tools
