@@ -10,7 +10,7 @@
                 "CMAKE_INSTALL_PREFIX": "${sourceDir}/install",
                 "CMAKE_TOOLCHAIN_FILE": {
                     "type": "FILEPATH",
-                    "value": "${sourceDir}/../../cmake/arm-gcc-cortex-m4.cmake"
+                    "value": "${sourceDir}/cmake/arm-gcc-cortex-m4.cmake"
                 }
             },
             "architecture": {
