@@ -6,7 +6,7 @@
 
 1. This repo uses submodules, to clone execute:    
 `git clone --recursive https://github.com/tdjastrzebski/B-L4S5I-IOT01A_AZURE-RTOS`  
-1. Copy `/app/azure_config-template.h` to `/app/azure_config.h`, modify settings like WiFi password, IoT hostname etc.
+1. Copy `/app/azure_config-template.h` to `/app/azure_config.h`, provide settings like WiFi password, IoT hostname etc.
 ## What you need
 
 * Visual Studio or VS Code with C/C++ tools
